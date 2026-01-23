@@ -1,0 +1,121 @@
+header{
+    background-color: rgb(175,30,45);
+    height: 70px;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    align-content: center;
+    border-bottom: 5px black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#Logo{
+    position: relative;
+    top: px;
+}
+
+body{
+    margin: 0;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    font-family: Inter, Arial, sans-serif;
+}
+
+.AccueilBox{
+ display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+  justify-content: center;
+  background-color: rgba(57, 72, 207, 0);
+  border: 1px rgb(255, 255, 255) solid;
+   box-shadow: 10px 6px 8px black;
+    transition: transform 0.3s ;
+}
+.AccueilBox:hover{
+  transform: scale(1.2);
+}
+.CalendrierBox{
+ display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+  justify-content: center;
+  background-color: rgba(57, 72, 207, 0);
+  border: 1px rgb(255, 255, 255) solid;
+   box-shadow: 10px 6px 8px black;
+    transition: transform 0.3s ;
+}
+.CalendrierBox:hover{
+  transform: scale(1.2);
+}
+
+.EquipeBox{
+ display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+  justify-content: center;
+  background-color: rgba(57, 72, 207, 0);
+  border: 1px rgb(255, 255, 255) solid;
+   box-shadow: 10px 6px 8px black;
+    transition: transform 0.3s ;
+}
+.EquipeBox:hover{
+  transform: scale(1.2);
+}
+
+.TitreBox{
+ display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+  justify-content: center;
+  background-color: rgba(57, 72, 207, 0);
+  border: 1px rgb(255, 255, 255) solid;
+   box-shadow: 10px 6px 8px black;
+    transition: transform 0.3s ;
+}
+.TitreBox:hover{
+  transform: scale(1.2);
+}
+
+.HistoireBox{
+ display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+  justify-content: center;
+  background-color: rgba(57, 72, 207, 0);
+  border: 1px rgb(255, 255, 255) solid;
+   box-shadow: 10px 6px 8px black;
+    transition: transform 0.3s ;
+}
+.HistoireBox:hover{
+  transform: scale(1.2);
+}
+
+.ContactBox{
+ display: flex;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+  justify-content: center;
+  background-color: rgba(57, 72, 207, 0);
+  border: 1px rgb(255, 255, 255) solid;
+   box-shadow: 10px 6px 8px black;
+    transition: transform 0.3s ;
+    margin-right: 170px;
+}
+.ContactBox:hover{
+  transform: scale(1.2);
+}
