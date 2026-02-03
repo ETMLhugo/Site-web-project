@@ -671,18 +671,70 @@ position: absolute;
 .histoire{
   font-size: 20px;
 font-weight: 300;
-margin-left: 10pc;
 margin-top: 0;
+margin-bottom: 100px;
+margin-left: 20pc;
+margin-right: 20pc;
 }
-.histoire hr{
-    margin-top: -20px;
+.backgroundhistoire{
+  background-color: white;
+  margin-top: -10px;
+  text-align: center;
+}
+.titelhr{
+    font-size: 20px;
+font-weight: 300;
+margin-left: 20pc;
+margin-right: 20pc;
+margin-top: 0;
+margin-bottom: 100px;
+justify-self: center;
+}
+.titelhr hr{
+      margin-top: -20px;
   width: 800px;
   margin-left: 0px;
   padding-left: 100px;
   border: 2px solid rgb(0, 0, 0);
-  margin-left: 10pc;
+}
+.titelhr h1{
+    font-size: 50px;
+font-weight: 900;
+padding-top: 50px;
+font-family: Publico, Times, serif;
+}
+.histoire hr{
+    margin-top: -20px;
+  width: 500px;
+  padding-left: 100px;
+  border: 2px solid rgb(0, 0, 0);
+  margin-bottom: 50px;
+ 
 }
 
+.histoire h1{
+  font-size: 40px;
+font-weight: 900;
+padding-top: 10px;
+}
+
+.histoire h2{
+font-size: 40px;
+font-weight: 900;
+padding-top: 100px;
+font-family: Publico, Times, serif;
+}
+.histoire p{
+  line-height: 30px;
+  text-align: left;
+  margin-left: 10pc;
+  font-family: Avenir, Helvetica, serif;
+}
+.histoire li{
+   line-height: 30px;
+  text-align: left;
+  margin-left: 10pc;
+}
 /*---------------------------------------------Debut Equipe-----------------------------------------------------------*/
 .playerBox{
   display: flex;
