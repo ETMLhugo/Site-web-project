@@ -53,9 +53,7 @@
     height: 70vh;
   }
 
-  .DegraderBox {
-    height: 200px;
-  }
+
 
   .NewsTitle h1 {
     font-size: 26px;
@@ -386,8 +384,7 @@ footer img{
 .LogoDegrader{
   position: absolute;
   bottom: 12px;
-  left: 50%;
-  transform: translateX(-100%);
+  justify-self: center;
   z-index: 2;
 }
 
@@ -411,6 +408,7 @@ footer img{
 font-size: 40px;
 font-weight: 900;
 padding-top: 10px;
+color: black;
 }
 .Formation hr{
   margin-top: -30px;
@@ -518,7 +516,13 @@ margin-left: 0;
     justify-content: end;
     position: relative;
     margin-top: 30px;
-   
+     border-radius: 30px;
+       box-shadow: 15px 15px 30px #000000,
+             -15px -15px 30px #5a5a5a;
+     transition: transform 0.3s ;
+}
+.coupeBox:hover{
+  transform: scale(1.1);
 }
 .coupeBox img{
   display: flex;
@@ -627,7 +631,14 @@ position: absolute;
     text-align: center;
     margin-top: 30px;
     padding-bottom: 10px;
+         border-radius: 30px;
+       box-shadow: 15px 15px 30px #000000,
+             -15px -15px 30px #5a5a5a;
+                 transition: transform 0.3s ;
    
+}
+.awarddisplay:hover{
+  transform: scale(1.1);
 }
 .awardBox{
     display: flex;
@@ -640,6 +651,7 @@ position: absolute;
     justify-content: end;
     align-items: center;
     position: relative;
+        border-radius: 30px;
 }
 .awardBox img{
   display: flex;
@@ -668,6 +680,9 @@ position: absolute;
 .dezoom{
   zoom: 65%;
 }
+
+
+
 .histoire{
   font-size: 20px;
 font-weight: 300;
@@ -677,7 +692,8 @@ margin-left: 20pc;
 margin-right: 20pc;
 }
 .backgroundhistoire{
-  background-color: white;
+
+  
   margin-top: -10px;
   text-align: center;
 }
@@ -735,18 +751,32 @@ font-family: Publico, Times, serif;
   text-align: left;
   margin-left: 10pc;
 }
+.bande{
+  position: absolute;
+background-image: url(image/bandehistoire.png);
+
+}
 /*---------------------------------------------Debut Equipe-----------------------------------------------------------*/
 .playerBox{
   display: flex;
   height: 400px;
   width: 300px;
-  border: 2px black solid;
   justify-content: center;
-    background: linear-gradient(to bottom, rgb(175,30,45),
-    rgba(207, 207, 207, 0.1));
+  border-radius: 30px;
+  border: 1px solid black;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #000000,
+             -15px -15px 30px #5a5a5a;
+             
     text-align: center;
-
+    transition: transform 0.3s ;
   z-index: 2;
+}
+
+
+.playerBox:hover{
+  
+  transform: scale(1.1);
 }
 
 .playerBox hr{
@@ -766,6 +796,7 @@ font-family: Publico, Times, serif;
   border-radius: 100px;
   background: linear-gradient(to bottom, rgb(175,30,45),
     rgba(255, 255, 255, 0.671));
+    
     z-index: 4;
     position: absolute;
     gap: 10px;
