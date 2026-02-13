@@ -49,9 +49,7 @@
     max-height: 1700px;
   }
 
-  .VideoBox {
-    height: 70vh;
-  }
+
 
 
 
@@ -191,6 +189,7 @@ main{
 }
 
 body{
+  height: auto;
     margin: 0;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
@@ -317,6 +316,11 @@ footer img{
   height: 100vh;
   overflow: hidden;
 }
+.imageprest{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
 
 .VideoBox video {
   position: fixed;
@@ -402,13 +406,14 @@ footer img{
 }
 .EquipeStyle{
   margin-left: 150px;
+
 }
 
 .Formation h1{
 font-size: 40px;
 font-weight: 900;
 padding-top: 10px;
-color: black;
+color: rgb(0, 0, 0);
 }
 .Formation hr{
   margin-top: -30px;
@@ -693,7 +698,7 @@ margin-right: 20pc;
 }
 .backgroundhistoire{
 
-  
+  position: relative;
   margin-top: -10px;
   text-align: center;
 }
@@ -751,11 +756,300 @@ font-family: Publico, Times, serif;
   text-align: left;
   margin-left: 10pc;
 }
-.bande{
-  position: absolute;
-background-image: url(image/bandehistoire.png);
-
+.group {
+ position: relative;
+ margin-top: 40px;
+ 
+ margin-bottom: 10px;
+ 
 }
+
+.input {
+ font-size: 16px;
+ padding: 10px 10px 10px 5px;
+ display: block;
+ width: 185px;
+ border: none;
+ border-bottom: 1px solid #000000;
+ background: transparent;
+}
+
+.input:focus {
+ outline: none;
+}
+
+.group label {
+ color: #000000;
+ font-size: 18px;
+ font-weight: normal;
+ position: absolute;
+ pointer-events: none;
+ left: 5px;
+ top: 10px;
+ transition: 0.2s ease all;
+ -moz-transition: 0.2s ease all;
+ -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label, .input:valid ~ label {
+ top: -20px;
+ font-size: 14px;
+ color: #5264AE;
+}
+
+.bar {
+ position: relative;
+ display: block;
+ width: 200px;
+}
+
+.bar:before, .bar:after {
+ content: '';
+ height: 2px;
+ width: 0;
+ bottom: 1px;
+ position: absolute;
+ background: #5264AE;
+ transition: 0.2s ease all;
+ -moz-transition: 0.2s ease all;
+ -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+ left: 50%;
+}
+
+.bar:after {
+ right: 50%;
+}
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+ width: 50%;
+}
+
+.highlight {
+ position: absolute;
+ height: 60%;
+ width: 100px;
+ top: 25%;
+ left: 0;
+ pointer-events: none;
+ opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+ animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+ from {
+  background: #5264AE;
+ }
+
+ to {
+  width: 0;
+  background: transparent;
+ }
+}
+
+
+
+
+.form-container {
+  width: 400px;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+   margin-right: 100px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #000000;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #000000;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #000000;
+  height: 96px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #000000;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #000000;
+  font-weight: 600;
+  width: 40%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #aaaaaa;
+  border-color: #000000;
+}
+.contactus{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: center;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+   margin-left: 300px;
+  
+}
+.youppi{
+  display: flex;
+  justify-content: center;
+}
+.EquipeStyle > input[type="radio"] {
+  display: none;
+}
+
+.filters {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  justify-self: end;
+  margin-right: 10%;
+}
+
+.filters label {
+  padding: 8px 18px;
+  background: rgb(175,30,45);
+  color: white;
+   border: 1px rgb(255, 255, 255) solid;
+   box-shadow: 10px 6px 8px black;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.filters label:hover {
+  background: black;
+}
+#all:checked ~ .filters label[for="all"],
+#attaquant:checked ~ .filters label[for="attaquant"],
+#defenseur:checked ~ .filters label[for="defenseur"],
+#gardien:checked ~ .filters label[for="gardien"],
+#staff:checked ~ .filters label[for="staff"] {
+  background: black;
+}
+
+.player {
+  display: grid;
+}
+
+.Formation {
+  display: block;
+}
+
+#attaquant:checked ~ .Formation,
+#attaquant:checked ~ .player {
+  display: none;
+}
+
+#attaquant:checked ~ .Formation.formation-attaquant,
+#attaquant:checked ~ .player.attaquant {
+  display: grid;
+}
+
+#defenseur:checked ~ .Formation,
+#defenseur:checked ~ .player {
+  display: none;
+}
+
+#defenseur:checked ~ .Formation.formation-defenseur,
+#defenseur:checked ~ .player.defenseur {
+  display: grid;
+}
+
+#gardien:checked ~ .Formation,
+#gardien:checked ~ .player {
+  display: none;
+}
+
+#gardien:checked ~ .Formation.formation-gardien,
+#gardien:checked ~ .player.gardien {
+  display: grid;
+}
+
+#staff:checked ~ .Formation,
+#staff:checked ~ .player {
+  display: none;
+}
+
+#staff:checked ~ .Formation.formation-staff,
+#staff:checked ~ .player.staff {
+  display: grid;
+}
+
+
 /*---------------------------------------------Debut Equipe-----------------------------------------------------------*/
 .playerBox{
   display: flex;
@@ -865,3 +1159,37 @@ background-image: url(image/bandehistoire.png);
   position: relative
 }
 /*---------------------------------------------Fin Equipe-----------------------------------------------------------*/
+/*------------------------------------debut staff -----------------------------------------*/
+.staffBox{
+  display: flex;
+  height: 400px;
+  width: 300px;
+  background-size: contain;
+  justify-content: center;
+  align-items: end;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+}
+.staffname{
+  display: flex;
+  background-color: #33323265;
+  height: 60px;
+  width: 250px;
+  overflow-wrap: break-word;
+  margin-bottom: 15px;
+  color: white;
+  text-align: left;
+  flex-direction: column;
+  gap: 1;
+  justify-content: center;
+}
+.staffname h1{
+font-size: 16px;
+font-weight: 899;
+margin: 0;
+
+}
+.staffname h2{
+  font-size: 13px;
+  margin: 0;
+}

@@ -20,11 +20,12 @@
         </header>
         <main>
                 <section class="VideoBox">
-        <img src="image/fondequipe.jpg" alt="">
+        <img src="image/fondequipe.jpg" class="imageprest" alt="">
+        <div class="DegraderBox"></div>
         <div class="NewsTitle">
         <div class="Formation"> 
-        <h1>Formation</h1>
-        <hr style="margin-top: 1px;">
+        <h1 style="color: white;">Formation</h1>
+        <hr style="margin-top: 1px; border-color: white;">
         </div>
         </div>
     </section>
@@ -32,11 +33,26 @@
     <img src="image\logoCanadien.png" alt="Logo" />
                                             </div>
             <div class="EquipeStyle">
-                <div class="Formation">
+
+ <input type="radio" name="poste" id="all" checked>
+  <input type="radio" name="poste" id="attaquant">
+  <input type="radio" name="poste" id="defenseur">
+  <input type="radio" name="poste" id="gardien">
+  <input type="radio" name="poste" id="staff">
+
+                <div class="filters">
+  <label for="all">Tous</label>
+  <label for="attaquant">Attaquants</label>
+  <label for="defenseur">Défenseurs</label>
+  <label for="gardien">Gardiens</label>
+  <label for="staff">Staff</label>
+</div>
+
+                <div class="Formation formation-attaquant">
                     <h1>Attaquants</h1>
                     <hr >
                     </div>
-      <div class="player">
+      <div class="player attaquant">
          <!---------------------------------------17-->
         <div class="playerBox">
             <div class="number"><b>#17</b></div>
@@ -295,11 +311,11 @@
             </div>
         </div>
       </div>
-             <div class="Formation">
+             <div class="Formation formation-defenseur">
                     <h1>Défenseurs</h1>
                     <hr>
                     </div>
-      <div class="player">
+      <div class="player defenseur">
                         <!---------------------------------------45-->
         <div class="playerBox">
             <div class="number"><b>#45</b></div>
@@ -413,11 +429,11 @@
             </div>
         </div>
       </div>
-                              <div class="Formation">
+                              <div class="Formation formation-gardien">
                     <h1>Gardiens</h1>
                     <hr>
                     </div>
-      <div class="player">
+      <div class="player gardien">
                                                               <!---------------------------------------35-->
         <div class="playerBox">
             <div class="number"><b>#35</b></div>
@@ -451,7 +467,151 @@
             </div>
         </div>
       </div>
+
+       <div class="Formation formation-staff">
+                    <h1>Staff</h1>
+                    <hr>
+                    
+                    <h1 style="text-align: center;
+    font-weight: 999;font-size: 50px;">Entraîneurs</h1>
+    <hr style="margin-top: -20px;
+                width: 500px;
+                 padding-left: 100px;
+                    border: 2px solid rgb(0, 0, 0);
+                     margin-bottom: 50px;">
+                     </div>
+      <div class="player staff">
+        
+        
+
+        <div class="staffBox" style="background-image: url(image/staff/stlouis.webp)">
+        
+            <div class="staffname">
+            <h1>Martin St-Louis</h1>
+            <h2>Entraîneurs-chef</h2>
             </div>
+        </div>
+
+<div class="staffBox" style="background-image: url(image/staff/letowski.webp)">
+        
+            <div class="staffname">
+            <h1>Trevor Letowski</h1>
+            <h2>Entraîneur adjoint</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/robidas.webp)">
+        
+            <div class="staffname">
+            <h1>Stéphane Robidas</h1>
+            <h2>Entraîneur adjoint</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/grillo.webp)">
+        
+            <div class="staffname">
+            <h1>Roger Grillo</h1>
+            <h2>Entraîneur consultant</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/marciano.webp)">
+        
+            <div class="staffname">
+            <h1>Marco Marciano</h1>
+            <h2>Entraîneur des gardiens de but par intérim</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/harvey.webp)">
+        
+            <div class="staffname">
+            <h1>Daniel Harvey</h1>
+            <h2>Entraîneur vidéo</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/corneau.png)">
+        
+            <div class="staffname">
+            <h1>Enrick Corneau</h1>
+            <h2>Entraîneur vidéo adjoint</h2>
+            </div>
+        </div>
+        
+        </div>
+        <div class="Formation formation-staff">
+                    <h1 style="text-align: center;
+    font-weight: 999;font-size: 50px;">Administration</h1>
+    <hr style="margin-top: -20px;
+                width: 500px;
+                 padding-left: 100px;
+                    border: 2px solid rgb(0, 0, 0);
+                     margin-bottom: 50px;">
+                     </div>
+      <div class="player staff">
+
+        <div class="staffBox" style="background-image: url(image/staff/stlouis.webp)">
+        
+            <div class="staffname">
+            <h1>Martin St-Louis</h1>
+            <h2>Entraîneurs-chef</h2>
+            </div>
+        </div>
+
+<div class="staffBox" style="background-image: url(image/staff/letowski.webp)">
+        
+            <div class="staffname">
+            <h1>Trevor Letowski</h1>
+            <h2>Entraîneur adjoint</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/robidas.webp)">
+        
+            <div class="staffname">
+            <h1>Stéphane Robidas</h1>
+            <h2>Entraîneur adjoint</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/grillo.webp)">
+        
+            <div class="staffname">
+            <h1>Roger Grillo</h1>
+            <h2>Entraîneur consultant</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/marciano.webp)">
+        
+            <div class="staffname">
+            <h1>Marco Marciano</h1>
+            <h2>Entraîneur des gardiens de but par intérim</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/harvey.webp)">
+        
+            <div class="staffname">
+            <h1>Daniel Harvey</h1>
+            <h2>Entraîneur vidéo</h2>
+            </div>
+        </div>
+
+        <div class="staffBox" style="background-image: url(image/staff/corneau.png)">
+        
+            <div class="staffname">
+            <h1>Enrick Corneau</h1>
+            <h2>Entraîneur vidéo adjoint</h2>
+            </div>
+        </div>
+        
+        </div>
+
+
+    </div>
                     </main>
                 <footer>
             <img src="image\logoCanadien.png" width="100" style="padding-right: 1250px;" alt="logo des canadien en fin de page">
